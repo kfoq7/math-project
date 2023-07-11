@@ -187,7 +187,6 @@ export const products = [
       }
     }
   },
-
   {
     id: 8,
     title: 'Pierced Owl Rose Gold Plated Stainless Steel Double',
@@ -200,17 +199,17 @@ export const products = [
     previous: {
       rating: {
         rate: {
-          lastMonth: [1.9, 1.3, 2.1],
-          currentMonth: [10.99, 9.99, 11.6]
+          lastMonth: [1.9, 1.3],
+          currentMonth: [10.99, 9.99]
         },
         count: {
-          lastMonth: [113, 100, 105],
-          currentMonth: [113, 100, 105]
+          lastMonth: [113, 100],
+          currentMonth: [113, 100]
         }
       },
       prices: {
-        lastMonth: [10.99, 9.99, 11.6],
-        currentMonth: [10.99, 9.99, 11.6]
+        lastMonth: [10.99, 9.99],
+        currentMonth: [10.99, 9.99]
       }
     }
   },
@@ -227,17 +226,17 @@ export const products = [
     previous: {
       rating: {
         rate: {
-          lastMonth: [3.3, 3.5, 3.1],
-          currentMonth: [64.0, 70.5, 62.4]
+          lastMonth: [3.3, 3.5],
+          currentMonth: [64.0, 70.5]
         },
         count: {
-          lastMonth: [203, 205, 196],
-          currentMonth: [203, 205, 196]
+          lastMonth: [203, 205],
+          currentMonth: [203, 205]
         }
       },
       prices: {
-        lastMonth: [64.0, 70.5, 62.4],
-        currentMonth: [64.0, 70.5, 62.4]
+        lastMonth: [64.0, 70.5],
+        currentMonth: [64.0, 70.5]
       }
     }
   },
@@ -254,17 +253,17 @@ export const products = [
     previous: {
       rating: {
         rate: {
-          lastMonth: [2.9, 2.5, 3.1],
-          currentMonth: [109.0, 112.99, 96.6]
+          lastMonth: [2.9, 2.5],
+          currentMonth: [109.0, 112.99]
         },
         count: {
-          lastMonth: [470, 462, 485],
-          currentMonth: [470, 462, 485]
+          lastMonth: [470, 462],
+          currentMonth: [470, 462]
         }
       },
       prices: {
-        lastMonth: [109.0, 112.99, 96.6],
-        currentMonth: [109.0, 112.99, 96.6]
+        lastMonth: [109.0, 112.99],
+        currentMonth: [109.0, 112.99]
       }
     }
   },
@@ -282,17 +281,17 @@ export const products = [
     previous: {
       rating: {
         rate: {
-          lastMonth: [4.8, 4.2, 5.1],
-          currentMonth: [109.0, 101.99, 115.8]
+          lastMonth: [4.8, 4.2],
+          currentMonth: [109.0, 101.99]
         },
         count: {
-          lastMonth: [319, 330, 305],
-          currentMonth: [319, 330, 305]
+          lastMonth: [319, 330],
+          currentMonth: [319, 330]
         }
       },
       prices: {
-        lastMonth: [109.0, 101.99, 115.8],
-        currentMonth: [109.0, 101.99, 115.8]
+        lastMonth: [109.0, 101.99],
+        currentMonth: [109.0, 101.99]
       }
     }
   },
@@ -310,17 +309,17 @@ export const products = [
     previous: {
       rating: {
         rate: {
-          lastMonth: [4.8, 5.4, 4.2],
-          currentMonth: [114.0, 118.99, 102.5]
+          lastMonth: [4.8, 5.4],
+          currentMonth: [114.0, 118.99]
         },
         count: {
-          lastMonth: [400, 410, 391],
-          currentMonth: [400, 410, 391]
+          lastMonth: [400, 410],
+          currentMonth: [400, 410]
         }
       },
       prices: {
-        lastMonth: [114.0, 118.99, 102.5],
-        currentMonth: [114.0, 118.99, 102.5]
+        lastMonth: [114.0, 118.99],
+        currentMonth: [114.0, 118.99]
       }
     }
   },
@@ -337,17 +336,17 @@ export const products = [
     previous: {
       rating: {
         rate: {
-          lastMonth: [2.9, 3.6, 2.1],
-          currentMonth: [599.0, 604.5, 580.4]
+          lastMonth: [2.9, 3.6],
+          currentMonth: [599.0, 604.5]
         },
         count: {
-          lastMonth: [250, 265, 230],
-          currentMonth: [250, 265, 230]
+          lastMonth: [250, 265],
+          currentMonth: [250, 265]
         }
       },
       prices: {
-        lastMonth: [599.0, 604.5, 580.4],
-        currentMonth: [599.0, 604.5, 580.4]
+        lastMonth: [599.0, 604.5],
+        currentMonth: [599.0, 604.5]
       }
     }
   },
@@ -365,17 +364,17 @@ export const products = [
     previous: {
       rating: {
         rate: {
-          lastMonth: [2.2, 2.8, 1.9],
-          currentMonth: [999.99, 979.9, 1025.5]
+          lastMonth: [2.2, 2.8],
+          currentMonth: [999.99, 979.9]
         },
         count: {
-          lastMonth: [140, 120, 150],
-          currentMonth: [140, 120, 150]
+          lastMonth: [140, 120],
+          currentMonth: [140, 120]
         }
       },
       prices: {
-        lastMonth: [999.99, 979.9, 1025.5],
-        currentMonth: [999.99, 979.9, 1025.5]
+        lastMonth: [999.99, 979.9],
+        currentMonth: [999.99, 979.9]
       }
     }
   },
@@ -392,17 +391,17 @@ export const products = [
     previous: {
       rating: {
         rate: {
-          lastMonth: [2.6, 2.3, 3.1],
-          currentMonth: [56.99, 39.9, 64.6]
+          lastMonth: [2.6, 2.3],
+          currentMonth: [56.99, 39.9]
         },
         count: {
-          lastMonth: [220, 235, 250],
-          currentMonth: [220, 235, 250]
+          lastMonth: [220, 235],
+          currentMonth: [220, 235]
         }
       },
       prices: {
-        lastMonth: [56.99, 39.9, 64.6],
-        currentMonth: [56.99, 39.9, 64.6]
+        lastMonth: [56.99, 39.9],
+        currentMonth: [56.99, 39.9]
       }
     }
   },
@@ -420,17 +419,17 @@ export const products = [
     previous: {
       rating: {
         rate: {
-          lastMonth: [2.9, 2.3, 3.3],
-          currentMonth: [29.95, 23.99, 36.5]
+          lastMonth: [2.9, 2.3],
+          currentMonth: [29.95, 23.99]
         },
         count: {
-          lastMonth: [120, 100, 190],
-          currentMonth: [120, 100, 190]
+          lastMonth: [120, 100],
+          currentMonth: [120, 100]
         }
       },
       prices: {
-        lastMonth: [29.95, 23.99, 36.5],
-        currentMonth: [29.95, 23.99, 36.5]
+        lastMonth: [29.95, 23.99],
+        currentMonth: [29.95, 23.99]
       }
     }
   },
@@ -446,17 +445,17 @@ export const products = [
     previous: {
       rating: {
         rate: {
-          lastMonth: [3.8, 3.3, 4.3],
-          currentMonth: [39.99, 23.99, 46.5]
+          lastMonth: [3.8, 3.3],
+          currentMonth: [39.99, 23.99]
         },
         count: {
-          lastMonth: [655, 679, 690],
-          currentMonth: [655, 679, 690]
+          lastMonth: [655, 679],
+          currentMonth: [655, 679]
         }
       },
       prices: {
-        lastMonth: [39.99, 23.99, 46.5],
-        currentMonth: [39.99, 23.99, 46.5]
+        lastMonth: [39.99, 23.99],
+        currentMonth: [39.99, 23.99]
       }
     }
   },
@@ -472,17 +471,17 @@ export const products = [
     previous: {
       rating: {
         rate: {
-          lastMonth: [4.7, 6.2, 3.5],
-          currentMonth: [9.85, 12.5, 7.99]
+          lastMonth: [4.7, 6.2],
+          currentMonth: [9.85, 12.5]
         },
         count: {
-          lastMonth: [130, 155, 110],
-          currentMonth: [130, 155, 110]
+          lastMonth: [130, 155],
+          currentMonth: [130, 155]
         }
       },
       prices: {
-        lastMonth: [9.85, 12.5, 7.99],
-        currentMonth: [9.85, 12.5, 7.99]
+        lastMonth: [9.85, 12.5],
+        currentMonth: [9.85, 12.5]
       }
     }
   },
@@ -499,17 +498,17 @@ export const products = [
     previous: {
       rating: {
         rate: {
-          lastMonth: [4.5, 4.1, 5.2],
-          currentMonth: [7.95, 9.99, 6.5]
+          lastMonth: [4.5, 4.1],
+          currentMonth: [7.95, 9.99]
         },
         count: {
-          lastMonth: [146, 139, 157],
-          currentMonth: [146, 139, 157]
+          lastMonth: [146, 139],
+          currentMonth: [146, 139]
         }
       },
       prices: {
-        lastMonth: [7.95, 9.99, 6.5],
-        currentMonth: [7.95, 9.99, 6.5]
+        lastMonth: [7.95, 9.99],
+        currentMonth: [7.95, 9.99]
       }
     }
   },
@@ -525,17 +524,17 @@ export const products = [
     previous: {
       rating: {
         rate: {
-          lastMonth: [3.6, 4.8, 2.4],
-          currentMonth: [12.99, 15.25, 10.49]
+          lastMonth: [3.6, 4.8],
+          currentMonth: [12.99, 15.25]
         },
         count: {
-          lastMonth: [145, 160, 124],
-          currentMonth: [145, 160, 124]
+          lastMonth: [145, 160],
+          currentMonth: [145, 160]
         }
       },
       prices: {
-        lastMonth: [12.99, 15.25, 10.49],
-        currentMonth: [12.99, 15.25, 10.49]
+        lastMonth: [12.99, 15.25],
+        currentMonth: [12.99, 15.25]
       }
     }
   }
