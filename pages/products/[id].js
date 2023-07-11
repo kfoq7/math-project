@@ -4,15 +4,16 @@ import { useState } from 'react'
 import { useRouter } from 'next/router'
 import { AiFillStar } from 'react-icons/ai'
 import Paragrah from '@/components/paragrah'
+import TableResult from '@/components/table-result'
 import { useProducts } from '@/hooks/useProducts'
 
 export default function ProductDetail() {
-  const [price, setPrice] = useState([])
+  const [result, setPrice] = useState()
   const router = useRouter()
   const { findProduct, calculatePrice } = useProducts()
 
   const product = findProduct(router.query.id)
-  console.log(product)
+
   const handleCalculatePrice = () => {
     const { prices, rating } = product.previous
 
@@ -21,13 +22,11 @@ export default function ProductDetail() {
       matrix2: [rating.count.lastMonth, rating.count.currentMonth]
     })
 
-    console.log({ result })
-
     setPrice(result)
   }
 
   return (
-    <div className="p-5 w-full h-screen bg-gray-100 md:px-10">
+    <div className="p-5 w-full h-full bg-gray-100 md:px-10">
       <h1 className="text-4xl font-extrabold text-gray-700 py-4 text-center">
         Detalles del producto
       </h1>
@@ -106,6 +105,8 @@ export default function ProductDetail() {
                       </div>
                     ))}
                   </div>
+
+                  <TableResult header={['Precio', 'Ganancia']} data={result} />
                 </div>
 
                 <div className="m-3.5">

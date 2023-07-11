@@ -12,7 +12,6 @@ export function useProducts() {
   const { products, ...restContext } = context
 
   const calculatePrice = matrix => {
-    console.log(matrix)
     return multiplyMatrix(matrix)
   }
 
