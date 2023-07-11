@@ -105,8 +105,12 @@ export default function ProductDetail() {
                       </div>
                     ))}
                   </div>
-
-                  <TableResult header={['Precio', 'Ganancia']} data={result} />
+                  {result && (
+                    <TableResult
+                      header={['Precio', 'Ganancia']}
+                      data={result}
+                    />
+                  )}
                 </div>
 
                 <div className="m-3.5">
