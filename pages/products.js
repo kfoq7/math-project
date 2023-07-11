@@ -90,6 +90,7 @@ export default function Products() {
           products.map(({ id, title, description, rating, price }) => (
             <Card
               key={id}
+              id={id}
               title={title}
               description={description}
               price={price}

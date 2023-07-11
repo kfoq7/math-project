@@ -12,11 +12,13 @@ export default function ProductDetail() {
   const { findProduct, calculatePrice } = useProducts()
 
   const product = findProduct(router.query.id)
-
+  console.log(product)
   const handleCalculatePrice = () => {
+    const { prices, rating } = product.previous
+
     const result = calculatePrice({
-      matrix1: [product.previous.prices],
-      matrix2: [product.previous.rating.count]
+      matrix1: [prices.lastMonth, prices.currentMonth],
+      matrix2: [rating.count.lastMonth, rating.count.currentMonth]
     })
 
     console.log({ result })
@@ -70,7 +72,7 @@ export default function ProductDetail() {
               <div className="flex justify-between py-2">
                 <div>
                   <div className="flex pt-5">
-                    {product.previous.prices.map(price => (
+                    {product.previous.prices.currentMonth.map(price => (
                       <div
                         key={price}
                         className="px-2 flex justify-center items-center first:border-r border-gray-300 last:border-l"
@@ -81,7 +83,7 @@ export default function ProductDetail() {
                   </div>
 
                   <div className="flex pt-5">
-                    {product.previous.rating.count.map(count => (
+                    {product.previous.rating.count.currentMonth.map(count => (
                       <div
                         key={count}
                         className="px-2 flex justify-center items-center first:border-r border-gray-300 last:border-l"
@@ -92,7 +94,7 @@ export default function ProductDetail() {
                   </div>
 
                   <div className="flex pt-5">
-                    {product.previous.rating.rate.map(rating => (
+                    {product.previous.rating.rate.currentMonth.map(rating => (
                       <div
                         key={rating}
                         className="px-2 flex justify-center items-center first:border-r border-gray-300 last:border-l"

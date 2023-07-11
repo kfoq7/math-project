@@ -11,17 +11,17 @@ export const products = [
     previous: {
       rating: {
         rate: {
-          lastMoth: [3.9, 2.3, 4.1],
-          currentMoth: [109.95, 119.99, 94.6]
+          lastMonth: [3.9, 2.3, 4.1],
+          currentMonth: [109.95, 119.99, 94.6]
         },
         count: {
-          lastMoth: [120, 100, 190],
-          currentMoth: [120, 100, 190]
+          lastMonth: [120, 100, 190],
+          currentMonth: [120, 100, 190]
         }
       },
       prices: {
-        lastMoth: [109.95, 119.99, 94.6],
-        currentMoth: [109.95, 119.99, 94.6]
+        lastMonth: [109.95, 119.99, 94.6],
+        currentMonth: [109.95, 119.99, 94.6]
       }
     }
   },
@@ -37,12 +37,22 @@ export const products = [
     rating: { rate: 4.1, count: 259 },
     previous: {
       rating: {
-        rate: [4.1, 2.3, 3.5],
-        count: [259, 265, 190]
+        rate: {
+          lastMonth: [4.1, 2.3, 3.5],
+          currentMonth: [22.3, 24.5, 20.4]
+        },
+        count: {
+          lastMonth: [259, 265, 190],
+          currentMonth: [259, 265, 190]
+        }
       },
-      prices: [22.3, 24.5, 20.4]
+      prices: {
+        lastMonth: [22.3, 24.5, 20.4],
+        currentMonth: [22.3, 24.5, 20.4]
+      }
     }
   },
+
   {
     id: 3,
     title: 'Mens Cotton Jacket',
@@ -54,10 +64,19 @@ export const products = [
     rating: { rate: 4.7, count: 500 },
     previous: {
       rating: {
-        rate: [4.7, 3.5, 4.3],
-        count: [500, 475, 496]
+        rate: {
+          lastMonth: [4.7, 3.5, 4.3],
+          currentMonth: [63.95, 55.99, 57.5]
+        },
+        count: {
+          lastMonth: [500, 475, 496],
+          currentMonth: [500, 475, 496]
+        }
       },
-      prices: [63.95, 55.99, 57.5]
+      prices: {
+        lastMonth: [63.95, 55.99, 57.5],
+        currentMonth: [63.95, 55.99, 57.5]
+      }
     }
   },
   {
@@ -71,12 +90,22 @@ export const products = [
     rating: { rate: 2.1, count: 430 },
     previous: {
       rating: {
-        rate: [2.1, 1.85, 2.0],
-        count: [430, 435, 422]
+        rate: {
+          lastMonth: [2.1, 1.85, 2.0],
+          currentMonth: [17.7, 15.99, 14.5]
+        },
+        count: {
+          lastMonth: [430, 435, 422],
+          currentMonth: [430, 435, 422]
+        }
       },
-      prices: [17.7, 15.99, 14.5]
+      prices: {
+        lastMonth: [17.7, 15.99, 14.5],
+        currentMonth: [17.7, 15.99, 14.5]
+      }
     }
   },
+
   {
     id: 5,
     title:
@@ -89,12 +118,22 @@ export const products = [
     rating: { rate: 4.6, count: 400 },
     previous: {
       rating: {
-        rate: [4.6, 3.3, 4.5],
-        count: [413, 400, 395]
+        rate: {
+          lastMonth: [4.6, 3.3, 4.5],
+          currentMonth: [695.0, 705.8, 710.99]
+        },
+        count: {
+          lastMonth: [413, 400, 395],
+          currentMonth: [413, 400, 395]
+        }
       },
-      prices: [695.0, 705.8, 710.99]
+      prices: {
+        lastMonth: [695.0, 705.8, 710.99],
+        currentMonth: [695.0, 705.8, 710.99]
+      }
     }
   },
+
   {
     id: 6,
     title: 'Solid Gold Petite Micropave ',
@@ -106,12 +145,22 @@ export const products = [
     rating: { rate: 3.9, count: 70 },
     previous: {
       rating: {
-        rate: [3.9, 3.3, 4.1],
-        count: [68, 70, 85]
+        rate: {
+          lastMonth: [3.9, 3.3, 4.1],
+          currentMonth: [168.0, 155.99, 177.9]
+        },
+        count: {
+          lastMonth: [68, 70, 85],
+          currentMonth: [68, 70, 85]
+        }
       },
-      prices: [168.0, 155.99, 177.9]
+      prices: {
+        lastMonth: [168.0, 155.99, 177.9],
+        currentMonth: [168.0, 155.99, 177.9]
+      }
     }
   },
+
   {
     id: 7,
     title: 'White Gold Plated Princess',
@@ -123,12 +172,22 @@ export const products = [
     rating: { rate: 3, count: 400 },
     previous: {
       rating: {
-        rate: [3.0, 2.3, 3.85],
-        count: [410, 400, 395]
+        rate: {
+          lastMonth: [3.0, 2.3, 3.85],
+          currentMonth: [9.99, 10.95, 11.5]
+        },
+        count: {
+          lastMonth: [410, 400, 395],
+          currentMonth: [410, 400, 395]
+        }
       },
-      prices: [9.99, 10.95, 11.5]
+      prices: {
+        lastMonth: [9.99, 10.95, 11.5],
+        currentMonth: [9.99, 10.95, 11.5]
+      }
     }
   },
+
   {
     id: 8,
     title: 'Pierced Owl Rose Gold Plated Stainless Steel Double',
@@ -140,12 +199,22 @@ export const products = [
     rating: { rate: 1.9, count: 100 },
     previous: {
       rating: {
-        rate: [1.9, 1.3, 2.1],
-        count: [113, 100, 105]
+        rate: {
+          lastMonth: [1.9, 1.3, 2.1],
+          currentMonth: [10.99, 9.99, 11.6]
+        },
+        count: {
+          lastMonth: [113, 100, 105],
+          currentMonth: [113, 100, 105]
+        }
       },
-      prices: [10.99, 9.99, 11.6]
+      prices: {
+        lastMonth: [10.99, 9.99, 11.6],
+        currentMonth: [10.99, 9.99, 11.6]
+      }
     }
   },
+
   {
     id: 9,
     title: 'WD 2TB Elements Portable External Hard Drive - USB 3.0 ',
@@ -157,12 +226,22 @@ export const products = [
     rating: { rate: 3.3, count: 203 },
     previous: {
       rating: {
-        rate: [3.3, 3.5, 3.1],
-        count: [203, 205, 196]
+        rate: {
+          lastMonth: [3.3, 3.5, 3.1],
+          currentMonth: [64.0, 70.5, 62.4]
+        },
+        count: {
+          lastMonth: [203, 205, 196],
+          currentMonth: [203, 205, 196]
+        }
       },
-      prices: [64.0, 70.5, 62.4]
+      prices: {
+        lastMonth: [64.0, 70.5, 62.4],
+        currentMonth: [64.0, 70.5, 62.4]
+      }
     }
   },
+
   {
     id: 10,
     title: 'SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s',
@@ -174,12 +253,22 @@ export const products = [
     rating: { rate: 2.9, count: 470 },
     previous: {
       rating: {
-        rate: [2.9, 2.5, 3.1],
-        count: [470, 462, 485]
+        rate: {
+          lastMonth: [2.9, 2.5, 3.1],
+          currentMonth: [109.0, 112.99, 96.6]
+        },
+        count: {
+          lastMonth: [470, 462, 485],
+          currentMonth: [470, 462, 485]
+        }
       },
-      prices: [109.0, 112.99, 96.6]
+      prices: {
+        lastMonth: [109.0, 112.99, 96.6],
+        currentMonth: [109.0, 112.99, 96.6]
+      }
     }
   },
+
   {
     id: 11,
     title:
@@ -192,10 +281,19 @@ export const products = [
     rating: { rate: 4.8, count: 319 },
     previous: {
       rating: {
-        rate: [4.8, 4.2, 5.1],
-        count: [319, 330, 305]
+        rate: {
+          lastMonth: [4.8, 4.2, 5.1],
+          currentMonth: [109.0, 101.99, 115.8]
+        },
+        count: {
+          lastMonth: [319, 330, 305],
+          currentMonth: [319, 330, 305]
+        }
       },
-      prices: [109.0, 101.99, 115.8]
+      prices: {
+        lastMonth: [109.0, 101.99, 115.8],
+        currentMonth: [109.0, 101.99, 115.8]
+      }
     }
   },
 
@@ -211,12 +309,22 @@ export const products = [
     rating: { rate: 4.8, count: 400 },
     previous: {
       rating: {
-        rate: [4.8, 5.4, 4.2],
-        count: [400, 410, 391]
+        rate: {
+          lastMonth: [4.8, 5.4, 4.2],
+          currentMonth: [114.0, 118.99, 102.5]
+        },
+        count: {
+          lastMonth: [400, 410, 391],
+          currentMonth: [400, 410, 391]
+        }
       },
-      prices: [114.0, 118.99, 102.5]
+      prices: {
+        lastMonth: [114.0, 118.99, 102.5],
+        currentMonth: [114.0, 118.99, 102.5]
+      }
     }
   },
+
   {
     id: 13.0,
     title: 'Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin',
@@ -228,12 +336,22 @@ export const products = [
     rating: { rate: 2.9, count: 250 },
     previous: {
       rating: {
-        rate: [2.9, 3.6, 2.1],
-        count: [250, 265, 230]
+        rate: {
+          lastMonth: [2.9, 3.6, 2.1],
+          currentMonth: [599.0, 604.5, 580.4]
+        },
+        count: {
+          lastMonth: [250, 265, 230],
+          currentMonth: [250, 265, 230]
+        }
       },
-      prices: [599.0, 604.5, 580.4]
+      prices: {
+        lastMonth: [599.0, 604.5, 580.4],
+        currentMonth: [599.0, 604.5, 580.4]
+      }
     }
   },
+
   {
     id: 14.0,
     title:
@@ -246,12 +364,22 @@ export const products = [
     rating: { rate: 2.2, count: 140 },
     previous: {
       rating: {
-        rate: [2.2, 2.8, 1.9],
-        count: [140, 120, 150]
+        rate: {
+          lastMonth: [2.2, 2.8, 1.9],
+          currentMonth: [999.99, 979.9, 1025.5]
+        },
+        count: {
+          lastMonth: [140, 120, 150],
+          currentMonth: [140, 120, 150]
+        }
       },
-      prices: [999.99, 979.9, 1025.5]
+      prices: {
+        lastMonth: [999.99, 979.9, 1025.5],
+        currentMonth: [999.99, 979.9, 1025.5]
+      }
     }
   },
+
   {
     id: 15.0,
     title: "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
@@ -263,12 +391,22 @@ export const products = [
     rating: { rate: 2.6, count: 235 },
     previous: {
       rating: {
-        rate: [2.6, 2.3, 3.1],
-        count: [220, 235, 250]
+        rate: {
+          lastMonth: [2.6, 2.3, 3.1],
+          currentMonth: [56.99, 39.9, 64.6]
+        },
+        count: {
+          lastMonth: [220, 235, 250],
+          currentMonth: [220, 235, 250]
+        }
       },
-      prices: [56.99, 39.9, 64.6]
+      prices: {
+        lastMonth: [56.99, 39.9, 64.6],
+        currentMonth: [56.99, 39.9, 64.6]
+      }
     }
   },
+
   {
     id: 16,
     title:
@@ -281,10 +419,19 @@ export const products = [
     rating: { rate: 2.9, count: 340 },
     previous: {
       rating: {
-        rate: [2.9, 2.3, 3.3],
-        count: [120, 100, 190]
+        rate: {
+          lastMonth: [2.9, 2.3, 3.3],
+          currentMonth: [29.95, 23.99, 36.5]
+        },
+        count: {
+          lastMonth: [120, 100, 190],
+          currentMonth: [120, 100, 190]
+        }
       },
-      prices: [29.95, 23.99, 36.5]
+      prices: {
+        lastMonth: [29.95, 23.99, 36.5],
+        currentMonth: [29.95, 23.99, 36.5]
+      }
     }
   },
   {
@@ -298,10 +445,19 @@ export const products = [
     rating: { rate: 3.8, count: 679 },
     previous: {
       rating: {
-        rate: [3.8, 3.3, 4.3],
-        count: [655, 679, 690]
+        rate: {
+          lastMonth: [3.8, 3.3, 4.3],
+          currentMonth: [39.99, 23.99, 46.5]
+        },
+        count: {
+          lastMonth: [655, 679, 690],
+          currentMonth: [655, 679, 690]
+        }
       },
-      prices: [39.99, 23.99, 46.5]
+      prices: {
+        lastMonth: [39.99, 23.99, 46.5],
+        currentMonth: [39.99, 23.99, 46.5]
+      }
     }
   },
   {
@@ -315,10 +471,19 @@ export const products = [
     rating: { rate: 4.7, count: 130 },
     previous: {
       rating: {
-        rate: [4.7, 6.2, 3.5],
-        count: [130, 155, 110]
+        rate: {
+          lastMonth: [4.7, 6.2, 3.5],
+          currentMonth: [9.85, 12.5, 7.99]
+        },
+        count: {
+          lastMonth: [130, 155, 110],
+          currentMonth: [130, 155, 110]
+        }
       },
-      prices: [9.85, 12.5, 7.99]
+      prices: {
+        lastMonth: [9.85, 12.5, 7.99],
+        currentMonth: [9.85, 12.5, 7.99]
+      }
     }
   },
 
@@ -333,10 +498,19 @@ export const products = [
     rating: { rate: 4.5, count: 146 },
     previous: {
       rating: {
-        rate: [4.5, 4.1, 5.2],
-        count: [146, 139, 157]
+        rate: {
+          lastMonth: [4.5, 4.1, 5.2],
+          currentMonth: [7.95, 9.99, 6.5]
+        },
+        count: {
+          lastMonth: [146, 139, 157],
+          currentMonth: [146, 139, 157]
+        }
       },
-      prices: [7.95, 9.99, 6.5]
+      prices: {
+        lastMonth: [7.95, 9.99, 6.5],
+        currentMonth: [7.95, 9.99, 6.5]
+      }
     }
   },
   {
@@ -350,10 +524,19 @@ export const products = [
     rating: { rate: 3.6, count: 145 },
     previous: {
       rating: {
-        rate: [3.6, 4.8, 2.4],
-        count: [145, 160, 124]
+        rate: {
+          lastMonth: [3.6, 4.8, 2.4],
+          currentMonth: [12.99, 15.25, 10.49]
+        },
+        count: {
+          lastMonth: [145, 160, 124],
+          currentMonth: [145, 160, 124]
+        }
       },
-      prices: [12.99, 15.25, 10.49]
+      prices: {
+        lastMonth: [12.99, 15.25, 10.49],
+        currentMonth: [12.99, 15.25, 10.49]
+      }
     }
   }
 ]
