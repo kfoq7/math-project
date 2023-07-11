@@ -37,86 +37,88 @@ export default function ProductDetail() {
           </Link>
         </div>
 
-        <div className="w-full">
-          <section className="flex align-center justify-center">
-            <Image
-              src={product.image}
-              alt={product.title}
-              width={300}
-              height={200}
-              className="object-cover rounded-lg"
-            />
-          </section>
-
-          <section className="mt-5 px-5">
-            <Paragrah title="Descripción">{product.description}</Paragrah>
-
-            <section className="flex align-center justify-between md:justify-center mt-4">
-              <button
-                type="button"
-                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-              >
-                Actulizar
-              </button>
-              <button
-                type="button"
-                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-              >
-                Eliminar
-              </button>
+        {product && (
+          <div className="w-full">
+            <section className="flex align-center justify-center">
+              <Image
+                src={product.image}
+                alt={product.title}
+                width={300}
+                height={200}
+                className="object-cover rounded-lg"
+              />
             </section>
 
-            <div className="flex justify-between py-2">
-              <div>
-                <div className="flex pt-5">
-                  {product.previous.prices.map(price => (
-                    <div
-                      key={price}
-                      className="px-2 flex justify-center items-center first:border-r border-gray-300 last:border-l"
-                    >
-                      ${price}
-                    </div>
-                  ))}
-                </div>
+            <section className="mt-5 px-5">
+              <Paragrah title="Descripción">{product.description}</Paragrah>
 
-                <div className="flex pt-5">
-                  {product.previous.rating.count.map(count => (
-                    <div
-                      key={count}
-                      className="px-2 flex justify-center items-center first:border-r border-gray-300 last:border-l"
-                    >
-                      {count}
-                    </div>
-                  ))}
-                </div>
-
-                <div className="flex pt-5">
-                  {product.previous.rating.rate.map(rating => (
-                    <div
-                      key={rating}
-                      className="px-2 flex justify-center items-center first:border-r border-gray-300 last:border-l"
-                    >
-                      <div className="pr-2">
-                        <AiFillStar className="text-yellow-500 text-xl" />
-                      </div>
-                      <span>{rating}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="m-3.5">
+              <section className="flex align-center justify-between md:justify-center mt-4">
                 <button
                   type="button"
                   className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-                  onClick={handleCalculatePrice}
                 >
-                  Calcular Ganancia
+                  Actulizar
                 </button>
+                <button
+                  type="button"
+                  className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                >
+                  Eliminar
+                </button>
+              </section>
+
+              <div className="flex justify-between py-2">
+                <div>
+                  <div className="flex pt-5">
+                    {product.previous.prices.map(price => (
+                      <div
+                        key={price}
+                        className="px-2 flex justify-center items-center first:border-r border-gray-300 last:border-l"
+                      >
+                        ${price}
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="flex pt-5">
+                    {product.previous.rating.count.map(count => (
+                      <div
+                        key={count}
+                        className="px-2 flex justify-center items-center first:border-r border-gray-300 last:border-l"
+                      >
+                        {count}
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="flex pt-5">
+                    {product.previous.rating.rate.map(rating => (
+                      <div
+                        key={rating}
+                        className="px-2 flex justify-center items-center first:border-r border-gray-300 last:border-l"
+                      >
+                        <div className="pr-2">
+                          <AiFillStar className="text-yellow-500 text-xl" />
+                        </div>
+                        <span>{rating}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="m-3.5">
+                  <button
+                    type="button"
+                    className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                    onClick={handleCalculatePrice}
+                  >
+                    Calcular Ganancia
+                  </button>
+                </div>
               </div>
-            </div>
-          </section>
-        </div>
+            </section>
+          </div>
+        )}
       </div>
     </div>
   )
